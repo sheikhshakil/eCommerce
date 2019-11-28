@@ -41,7 +41,7 @@ header{
     color: #80BB01;
 }
 
-.top-header .btn:focus, .input-group .form-control, .input-group .btn:focus, .form-inline .btn:focus, .navbar-toggler:focus, .all-category:focus {
+.top-header .btn:focus, .input-group .form-control:focus, .input-group .btn:focus, .form-inline .btn:focus, .navbar-toggler:focus, .all-category:focus {
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
     outline: none;
@@ -222,4 +222,11 @@ section{
 .shop-more:hover{
     color: #000;
     background-color: #FFF;
+}
+
+@media (max-width: 576px) {
+    .container{
+        padding-left: 1rem!important;
+        padding-right: 1rem!important;
+    }
 }
