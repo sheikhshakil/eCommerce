@@ -1,0 +1,224 @@
+@import "all.min.css";
+@import "bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css?family=Signika&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+.small-font{
+    font-size: 0.8rem;
+}
+
+.container{
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
+header{
+    background-color: #0E7346;
+}
+
+/*style for top header*/
+
+.top-header, .middle-header{
+    border-bottom: 1px solid #278159;
+}
+
+.top-header .btn{
+    color: #FFF;
+    padding-left: 0;
+    padding-right: 2rem;
+}
+
+.top-header .nav-item a{
+    color: #FFF;
+}
+
+.top-header .nav-item a:hover{
+    color: #80BB01;
+}
+
+.top-header .btn:focus, .input-group .form-control, .input-group .btn:focus, .form-inline .btn:focus, .navbar-toggler:focus, .all-category:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none;
+}
+
+
+/*style for middle header*/
+
+.middle-header .col-6 > div > a {
+    text-decoration: none;
+    color: #FFF;
+}
+.middle-header .col-6 > div > a:hover{
+    color: #95cb46;
+}
+
+.middle-header .input-group-prepend{
+    background-color: #FFF;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    padding-left: 0.3rem;
+}
+.middle-header .input-group-append{
+    background-color: #80BB01;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.middle-header .input-group-append i{
+    color: #FFF;
+    font-size: 1.15rem;
+}
+
+.middle-header .input-group-append:hover{
+    background-color: #139764;
+}
+.form-control{
+    border: none;
+    width: 18rem;
+}
+
+
+.middle-header .col-3:last-child div{
+    background-color: #138552;
+    text-align: center;
+    padding: 0.7rem;
+    margin-left: 0.8rem;
+    border: 1px solid #15a266;
+    border-radius: 5%;
+    height: 5rem !important;
+    color: #FFF;
+}
+
+
+/*last header*/
+.last-header a{
+    color: #FFF;
+    font-family: 'Signika', sans-serif;
+    text-transform: uppercase;
+}
+.last-header a:hover{
+    color: #71BB01;
+}
+
+.navbar-toggler-icon{
+    background-image: url("../images/menu.png");
+}
+
+/*hidden until md - navbar*/
+.hidden .navbar-nav li > a, .hidden i{
+    color: #FFF !important;
+}
+
+#menu .navbar-nav a:hover{
+    color: #95cb46 !important;
+}
+
+.small-search .form-control{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 50%;
+}
+
+.small-search .btn{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (max-width: 768px) {
+    .img-fluid{
+        width: 70%;
+    }
+    .navbar-toggler{
+        font-size: 1rem;
+    }
+    #menu .navbar-nav a{
+        font-size: 0.9rem;
+    }
+    .small-search .form-control{
+        font-size: 0.9rem;
+    }
+    .small-search .btn{
+        padding-top: .335rem!important;
+        padding-bottom: .322rem!important;
+    }
+}
+
+/*style for banner section*/
+section{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/*style for banner section left menu*/
+.all-category{
+    border: none;
+    padding: 0.8rem 0.8rem;
+    color: #FFF;
+    background-color: #80BB01;
+    font-family: 'Signika', sans-serif;
+    text-transform: uppercase;
+    border-top-left-radius: 0.85rem;
+    border-top-right-radius: 0.85rem;
+}
+#left-menu{
+    border-left: 0.1rem solid #EBEBEB;
+    border-right: 0.1rem solid #EBEBEB;
+    border-bottom: 0.1rem solid #EBEBEB;
+    border-bottom-left-radius: 0.85rem;
+    border-bottom-right-radius: 0.85rem;
+}
+
+#left-menu ul{
+    list-style: none;
+    margin-left: 0.3rem;
+}
+#left-menu ul li{
+    padding-bottom: 0.8rem;
+}
+
+#left-menu ul li a{
+    color: #606060;
+    text-decoration: none;
+}
+#left-menu ul li a:hover{
+    color: #90BB5B;
+}
+
+/*changing position of carousel caption*/
+.cSlide .carousel-caption{
+    text-align: left;
+    z-index:1;
+    color:#fff;
+    top:40%;
+    bottom:auto;
+    -webkit-transform:translate(0, -50%);
+    -ms-transform:translate(0, -50%);
+    transform:translate(0, -50%);
+    font-family: 'Signika', sans-serif;
+}
+
+/*button in carousel caption*/
+.shop-more{
+    background-color: transparent;
+    border: 2px solid #FFF;
+    border-radius: 0.2rem;
+    padding: 0.6rem 1.2rem;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.shop-more:hover{
+    color: #000;
+    background-color: #FFF;
+}
