@@ -112,6 +112,7 @@ header{
     background-image: url("../images/menu.png");
 }
 
+
 /*hidden until md - navbar*/
 .hidden .navbar-nav li > a, .hidden i{
     color: #FFF !important;
