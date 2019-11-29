@@ -155,9 +155,8 @@ header{
 }
 
 /*style for banner section*/
-section{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+section, footer{
+    padding-top: 2.5rem;
 }
 
 /*style for banner section left menu*/
@@ -228,5 +227,104 @@ section{
     .container{
         padding-left: 1rem!important;
         padding-right: 1rem!important;
+    }
+}
+
+/*card styles*/
+.card-body > a{
+    text-decoration: none;
+    color: #86bd49;
+}
+.card-body > a:hover, .card-body p a:hover{
+    color: #69983f;
+}
+
+.card-body p a{
+    color: #000;
+    text-decoration: none;
+}
+
+.card-text{
+    font-size: 1.2rem;
+}
+.card-text del{
+    color: red;
+    font-size: 1rem;
+}
+
+/*dual-banner-1*/
+
+@media (max-width: 768px) {
+    .dual-banner .col-md-6{
+        padding-right: 15px!important;
+        padding-left: 15px!important;
+        padding-bottom: 1rem;
+    }
+    .dual-banner .row .col-md-6:last-child{
+        padding-bottom: 0;
+    }
+}
+@media (max-width: 768px) {
+
+    .dual-banner .img-fluid{
+        width: 100%!important;
+    }
+}
+
+
+/*footer*/
+footer .col-md-4 h5{
+    margin-bottom: 0.8rem;
+    color: #90BB5B;
+}
+footer .col-md-4  ul{
+    list-style: none;
+}
+footer .col-md-4  ul li{
+    margin-bottom: 0.7rem;
+}
+footer .col-md-4  ul li a{
+    color: white;
+    text-decoration: none;
+}
+footer .col-md-4  ul li a:hover{
+    color: #90BB5B;
+}
+
+footer .col-md-4 p span a{
+    text-decoration: none;
+    color: #90BB5B;
+}
+footer .col-md-4 p span a:hover{
+    color: #6c944c;
+}
+
+#email, footer button{
+    border: none;
+    outline: none;
+    padding: 0.3rem 0.9rem;
+}
+#email{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+footer button{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: -0.3rem;
+    background-color: #90BB5B;
+}
+footer button:hover{
+    background-color: #5d8040;
+    color: #FFF;
+}
+
+footer .container > p{
+    font-size: 0.9rem;
+}
+
+@media (max-width: 992px) {
+    #email{
+        width: 70%;
     }
 }
