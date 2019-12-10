@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Chicken Burger</title>
+</head>
+<body>
+
+<!--header-->
+<header>
+    <div class="d-none d-xl-block d-lg-block">
+        <div class="top-header">
+            <div class="container">
+                <div class="row pb-1">
+
+                    <!--usd, english-->
+                    <div class="col-6">
+                        <div class="dropdown d-inline">
+                            <button class="btn dropdown-toggle small-font" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                USD $
+                            </button>
+                            <div class="dropdown-menu small-font" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">EUR</a>
+                                <a class="dropdown-item" href="#">USD</a>
+                            </div>
+                        </div>
+                        <div class="dropdown d-inline">
+                            <button class="btn dropdown-toggle small-font" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                English
+                            </button>
+                            <div class="dropdown-menu small-font" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Spanish</a>
+                                <a class="dropdown-item" href="#">Turkey</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--nav my acc/ checkout/ sign in-->
+                    <div class="col-6">
+                        <ul class="nav justify-content-end small-font">
+                            <li class="nav-item">
+                                <a class="nav-link" href="signup.html">My Account</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Checkout</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pr-0" href="login.html">Sign in</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--nav logo, search bar etc-->
+        <div class="middle-header pt-3 pb-4">
+            <div class="container">
+                <div class="row">
+
+                    <!--logo-->
+                    <div class="col-3">
+                        <a class="navbar-brand mt-2 mb-1" href="index.html"><img src="images/logo.jpg" alt="Origine"></a>
+                    </div>
+
+                    <!--search-->
+                    <div class="col-6">
+                        <div class="mb-2">
+                            <a href="#" class="small-font">Top Tags: Car, Accessories, Tire Chains, Mirrors, Amplifiers</a>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <button class="btn dropdown-toggle small-font" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All</button>
+                                <div class="dropdown-menu small-font">
+                                    <a class="dropdown-item" href="#">Foods</a>
+                                    <a class="dropdown-item" href="#">Drinks</a>
+                                    <a class="dropdown-item" href="#">Fruits</a>
+                                    <a class="dropdown-item" href="#">Vegetables</a>
+                                </div>
+                                <input type="text" class="form-control small-font pt-4 pb-4" aria-label="Text input with dropdown button" placeholder="Enter Your Search Key...">
+                            </div>
+                            <div class="input-group-append">
+                                <button class="btn small-font" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--safe payment squares-->
+                    <div class="col-3 d-flex justify-content-end align-items-center">
+                        <div>
+                            <i class="fas fa-bell"></i>
+                            <p class="small-font">Safe Payment</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-lock"></i>
+                            <p class="small-font">24/7 Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--last-header-->
+        <div class="last-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+
+                        <!--left navbar-->
+                        <nav class="nav pt-2 pb-2">
+                            <a class="nav-link active pl-0" href="index.html">Home</a>
+                            <a class="nav-link" href="product-category.html">Products</a>
+                            <a class="nav-link" href="#">Delivery</a>
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </nav>
+                    </div>
+
+                    <!--icons at right-->
+                    <div class="col-6">
+                        <ul class="nav justify-content-end pt-2">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-heart"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pr-0" href="#"><i class="fas fa-shopping-bag"></i><span class="ml-1">$0.00</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--new navbar if less than 992px-->
+    <div class="d-xl-none d-lg-none">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light hidden pl-0 pr-0">
+
+                <!--logo-->
+                <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" class="img-fluid" alt=""></a>
+
+                <!--toggler-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--menu items-->
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Delivery</a>
+                        </li>
+
+                        <!--All category dropdown-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">All Categories</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Ocean Foods</a>
+                                <a class="dropdown-item" href="#">Vegetables</a>
+                                <a class="dropdown-item" href="#">Organic Foods</a>
+                                <a class="dropdown-item" href="#">Fresh Meat</a>
+                                <a class="dropdown-item" href="#">Sea Foods</a>
+                            </div>
+                        </li>
+
+                        <!--products dropdown-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="product-category.html">
+                                Products
+                            </a>
+                        </li>
+
+                        <!--currency dropdown-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Currency
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">USD</a>
+                                <a class="dropdown-item" href="#">EUR</a>
+                            </div>
+                        </li>
+
+
+                        <!--icon set-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-heart"></i><span class="ml-2">Wishlist</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-money-bill-alt"></i><span class="ml-2">Checkout</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signup.html"><i class="fas fa-lock"></i><span class="ml-2">Account</span></a>
+                        </li>
+
+                    </ul>
+
+                    <!--search bar for MD-->
+                    <form class="form-inline my-2 my-lg-0 small-search">
+                        <input class="form-control" type="search" placeholder="Search by keyword" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!--breadcrumb-->
+<div class="border-bottom" id="breadcrumb2">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb pl-0">
+                <li class="pr-3">Navigate:</li>
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">New Arrivals</a></li>
+                <li class="breadcrumb-item"><a href="product-category.html">Products</a></li>
+                <li class="breadcrumb-item active">Chicken Burgers & Platters</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+
+<!--section for details of product-->
+<section id="product-details">
+    <div class="container">
+        <div class="row">
+            <!--image preview of product-->
+            <div class="col-md-5">
+                <div class="xzoom-container">
+                    <img class="xzoom" id="xzoom-default" src="images/lorem-ipsum-lec1.jpg" xoriginal="images/lorem-ipsum-lec10.jpg" />
+
+                    <!--thumbnails-->
+                    <div class="xzoom-thumbs mt-3">
+                        <a href="images/lorem-ipsum-lec10.jpg"><img class="xzoom-gallery" width="80" src="images/lorem-ipsum-lec10.jpg"  xpreview="images/lorem-ipsum-lec1.jpg" title="Tasty Chicken Burger"></a>
+
+                        <a href="images/mauris-vel-tellus0.jpg"><img class="xzoom-gallery" width="80" src="images/mauris-vel-tellus.jpg" title="Spicy Chicken Burger"></a>
+
+                        <a href="images/proin-lectus-ipsum10.jpg"><img class="xzoom-gallery" width="80" src="images/proin-lectus-ipsum1.jpg" title="Platter that gives free Chicken Burger Offer!"></a>
+
+                        <a href="images/proin-lectus-ipsum0.jpg"><img class="xzoom-gallery" width="80" src="images/proin-lectus-ipsum.jpg" title="Platter that gives free Chicken Burger Offer!"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--details of product-->
+            <div class="col-md-7">
+                <h3>Chicken Burgers and Platters</h3>
+                <p class="mt-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </p>
+                <p class="mt-2">
+                    <span class="pr-3 border-right"><a href="#">10 Reviews</a></span>
+                    <span class="pl-3"><a href="#">Add your Review</a></span>
+                </p>
+                <p class="mt-2">
+                    <span class="price-large">$14.40</span>
+                    <span class="ml-2 text-danger"><del>$16.00</del></span>
+                </p>
+                <p class="mt-2">Availability: In Stock!</p>
+                <p class="mt-5">
+                    Now you can get your favourite burgers at only the above price along with our special platters with no extra cost under this limited time offer! So what are you waiting for? Order now to grab this loveable offer!
+                </p>
+                <div class="form-group mt-3">
+                    <label for="quantity">Quantity: </label>
+                    <select name="quantity" id="quantity" class="form-control ml-2 d-inline">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="mt-5">
+                    <a href="#!" role="button" id="order">Place Order</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--footer-->
+<footer>
+    <div class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h5>Information:</h5>
+                    <ul class="pl-0">
+                        <li><a href="#">Specials</a></li>
+                        <li><a href="#">Our Stores</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h5>Store Information</h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <span>My Company, 42 avenue des Champs Elysées 75000 Paris France</span>
+                    </p>
+                    <p>
+                        <i class="fas fa-phone-alt mr-2"></i>
+                        <span>Call us now: 0123-456-789</span>
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mr-2"></i>
+                        <span>Email: <a href="mailto:sales@yourcompany.com">sales@yourcompany.com</a></span>
+                    </p>
+                </div>
+                <div class="col-sm-4 text-md-right">
+                    <h5>Newsletter</h5>
+                    <div class="form-group">
+                        <input type="email"
+                               placeholder="Enter Email"
+                               name="email"
+                               value=""
+                               id="email">
+                        <button type="button">OK</button>
+                    </div>
+                </div>
+            </div>
+            <p class="text-right">© Sheikh Shakil Ahmed (2019)</p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src='https://code.jquery.com/jquery-2.1.1.js'></script>
+<script src='https://unpkg.com/xzoom/dist/xzoom.min.js'></script>
+<script src='https://hammerjs.github.io/dist/hammer.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js'></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+<script>
+    (function ($) {
+        $(document).ready(function() {
+            $('.xzoom, .xzoom-gallery').xzoom({zoomWidth: 400, title: true, tint: '#333', Xoffset: 15});
+            $('.xzoom2, .xzoom-gallery2').xzoom({position: '#xzoom2-id', tint: '#ffa200'});
+            $('.xzoom3, .xzoom-gallery3').xzoom({position: 'lens', lensShape: 'circle', sourceClass: 'xzoom-hidden'});
+            $('.xzoom4, .xzoom-gallery4').xzoom({tint: '#006699', Xoffset: 15});
+            $('.xzoom5, .xzoom-gallery5').xzoom({tint: '#006699', Xoffset: 15});
+
+            //Integration with hammer.js
+            var isTouchSupported = 'ontouchstart' in window;
+
+            if (isTouchSupported) {
+                //If touch device
+                $('.xzoom, .xzoom2, .xzoom3, .xzoom4, .xzoom5').each(function(){
+                    var xzoom = $(this).data('xzoom');
+                    xzoom.eventunbind();
+                });
+
+                $('.xzoom, .xzoom2, .xzoom3').each(function() {
+                    var xzoom = $(this).data('xzoom');
+                    $(this).hammer().on("tap", function(event) {
+                        event.pageX = event.gesture.center.pageX;
+                        event.pageY = event.gesture.center.pageY;
+                        var s = 1, ls;
+
+                        xzoom.eventmove = function(element) {
+                            element.hammer().on('drag', function(event) {
+                                event.pageX = event.gesture.center.pageX;
+                                event.pageY = event.gesture.center.pageY;
+                                xzoom.movezoom(event);
+                                event.gesture.preventDefault();
+                            });
+                        }
+
+                        xzoom.eventleave = function(element) {
+                            element.hammer().on('tap', function(event) {
+                                xzoom.closezoom();
+                            });
+                        }
+                        xzoom.openzoom(event);
+                    });
+                });
+
+                $('.xzoom4').each(function() {
+                    var xzoom = $(this).data('xzoom');
+                    $(this).hammer().on("tap", function(event) {
+                        event.pageX = event.gesture.center.pageX;
+                        event.pageY = event.gesture.center.pageY;
+                        var s = 1, ls;
+
+                        xzoom.eventmove = function(element) {
+                            element.hammer().on('drag', function(event) {
+                                event.pageX = event.gesture.center.pageX;
+                                event.pageY = event.gesture.center.pageY;
+                                xzoom.movezoom(event);
+                                event.gesture.preventDefault();
+                            });
+                        }
+
+                        var counter = 0;
+                        xzoom.eventclick = function(element) {
+                            element.hammer().on('tap', function() {
+                                counter++;
+                                if (counter == 1) setTimeout(openfancy,300);
+                                event.gesture.preventDefault();
+                            });
+                        }
+
+                        function openfancy() {
+                            if (counter == 2) {
+                                xzoom.closezoom();
+                                $.fancybox.open(xzoom.gallery().cgallery);
+                            } else {
+                                xzoom.closezoom();
+                            }
+                            counter = 0;
+                        }
+                        xzoom.openzoom(event);
+                    });
+                });
+
+                $('.xzoom5').each(function() {
+                    var xzoom = $(this).data('xzoom');
+                    $(this).hammer().on("tap", function(event) {
+                        event.pageX = event.gesture.center.pageX;
+                        event.pageY = event.gesture.center.pageY;
+                        var s = 1, ls;
+
+                        xzoom.eventmove = function(element) {
+                            element.hammer().on('drag', function(event) {
+                                event.pageX = event.gesture.center.pageX;
+                                event.pageY = event.gesture.center.pageY;
+                                xzoom.movezoom(event);
+                                event.gesture.preventDefault();
+                            });
+                        }
+
+                        var counter = 0;
+                        xzoom.eventclick = function(element) {
+                            element.hammer().on('tap', function() {
+                                counter++;
+                                if (counter == 1) setTimeout(openmagnific,300);
+                                event.gesture.preventDefault();
+                            });
+                        }
+
+                        function openmagnific() {
+                            if (counter == 2) {
+                                xzoom.closezoom();
+                                var gallery = xzoom.gallery().cgallery;
+                                var i, images = new Array();
+                                for (i in gallery) {
+                                    images[i] = {src: gallery[i]};
+                                }
+                                $.magnificPopup.open({items: images, type:'image', gallery: {enabled: true}});
+                            } else {
+                                xzoom.closezoom();
+                            }
+                            counter = 0;
+                        }
+                        xzoom.openzoom(event);
+                    });
+                });
+
+            } else {
+                //If not touch device
+
+                //Integration with fancybox plugin
+                $('#xzoom-fancy').bind('click', function(event) {
+                    var xzoom = $(this).data('xzoom');
+                    xzoom.closezoom();
+                    $.fancybox.open(xzoom.gallery().cgallery, {padding: 0, helpers: {overlay: {locked: false}}});
+                    event.preventDefault();
+                });
+
+                //Integration with magnific popup plugin
+                $('#xzoom-magnific').bind('click', function(event) {
+                    var xzoom = $(this).data('xzoom');
+                    xzoom.closezoom();
+                    var gallery = xzoom.gallery().cgallery;
+                    var i, images = new Array();
+                    for (i in gallery) {
+                        images[i] = {src: gallery[i]};
+                    }
+                    $.magnificPopup.open({items: images, type:'image', gallery: {enabled: true}});
+                    event.preventDefault();
+                });
+            }
+        });
+    })(jQuery);
+</script>
+</body>
+</html>

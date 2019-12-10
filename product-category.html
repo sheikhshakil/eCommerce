@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Products</title>
+
+</head>
+<body>
+
+<!--header-->
+<header>
+    <div class="d-none d-xl-block d-lg-block">
+        <div class="top-header">
+            <div class="container">
+                <div class="row pb-1">
+
+                    <!--usd, english-->
+                    <div class="col-6">
+                        <div class="dropdown d-inline">
+                            <button class="btn dropdown-toggle small-font" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                USD $
+                            </button>
+                            <div class="dropdown-menu small-font" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">EUR</a>
+                                <a class="dropdown-item" href="#">USD</a>
+                            </div>
+                        </div>
+                        <div class="dropdown d-inline">
+                            <button class="btn dropdown-toggle small-font" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                English
+                            </button>
+                            <div class="dropdown-menu small-font" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Spanish</a>
+                                <a class="dropdown-item" href="#">Turkey</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--nav my acc/ checkout/ sign in-->
+                    <div class="col-6">
+                        <ul class="nav justify-content-end small-font">
+                            <li class="nav-item">
+                                <a class="nav-link" href="signup.html">My Account</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Checkout</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pr-0" href="login.html">Sign in</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--nav logo, search bar etc-->
+        <div class="middle-header pt-3 pb-4">
+            <div class="container">
+                <div class="row">
+
+                    <!--logo-->
+                    <div class="col-3">
+                        <a class="navbar-brand mt-2 mb-1" href="index.html"><img src="images/logo.jpg" alt="Origine"></a>
+                    </div>
+
+                    <!--search-->
+                    <div class="col-6">
+                        <div class="mb-2">
+                            <a href="#" class="small-font">Top Tags: Car, Accessories, Tire Chains, Mirrors, Amplifiers</a>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <button class="btn dropdown-toggle small-font" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All</button>
+                                <div class="dropdown-menu small-font">
+                                    <a class="dropdown-item" href="#">Foods</a>
+                                    <a class="dropdown-item" href="#">Drinks</a>
+                                    <a class="dropdown-item" href="#">Fruits</a>
+                                    <a class="dropdown-item" href="#">Vegetables</a>
+                                </div>
+                                <input type="text" class="form-control small-font pt-4 pb-4" aria-label="Text input with dropdown button" placeholder="Enter Your Search Key...">
+                            </div>
+                            <div class="input-group-append">
+                                <button class="btn small-font" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--safe payment squares-->
+                    <div class="col-3 d-flex justify-content-end align-items-center">
+                        <div>
+                            <i class="fas fa-bell"></i>
+                            <p class="small-font">Safe Payment</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-lock"></i>
+                            <p class="small-font">24/7 Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--last-header-->
+        <div class="last-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+
+                        <!--left navbar-->
+                        <nav class="nav pt-2 pb-2">
+                            <a class="nav-link active pl-0" href="index.html">Home</a>
+                            <a class="nav-link" href="product-category.html">Products</a>
+                            <a class="nav-link" href="#">Delivery</a>
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </nav>
+                    </div>
+
+                    <!--icons at right-->
+                    <div class="col-6">
+                        <ul class="nav justify-content-end pt-2">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-heart"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pr-0" href="#"><i class="fas fa-shopping-bag"></i><span class="ml-1">$0.00</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--new navbar if less than 992px-->
+    <div class="d-xl-none d-lg-none">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light hidden pl-0 pr-0">
+
+                <!--logo-->
+                <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" class="img-fluid" alt=""></a>
+
+                <!--toggler-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--menu items-->
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Delivery</a>
+                        </li>
+
+                        <!--All category dropdown-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">All Categories</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Ocean Foods</a>
+                                <a class="dropdown-item" href="#">Vegetables</a>
+                                <a class="dropdown-item" href="#">Organic Foods</a>
+                                <a class="dropdown-item" href="#">Fresh Meat</a>
+                                <a class="dropdown-item" href="#">Sea Foods</a>
+                            </div>
+                        </li>
+
+                        <!--products dropdown-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="product-category.html">
+                                Products
+                            </a>
+                        </li>
+
+                        <!--currency dropdown-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Currency
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">USD</a>
+                                <a class="dropdown-item" href="#">EUR</a>
+                            </div>
+                        </li>
+
+
+                        <!--icon set-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-heart"></i><span class="ml-2">Wishlist</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-money-bill-alt"></i><span class="ml-2">Checkout</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signup.html"><i class="fas fa-lock"></i><span class="ml-2">Account</span></a>
+                        </li>
+
+                    </ul>
+
+                    <!--search bar for MD-->
+                    <form class="form-inline my-2 my-lg-0 small-search">
+                        <input class="form-control" type="search" placeholder="Search by keyword" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!--breadcrumb-->
+<div class="border-bottom" id="breadcrumb">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb pl-0">
+                <li class="pr-3">Navigate:</li>
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">New Arrivals</a></li>
+                <li class="breadcrumb-item active">Products</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<!--section for products-->
+<section id="product-category">
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-md-3">
+
+                <!--accordion for Categories-->
+                <h5 class="border-bottom text-uppercase">Categories</h5>
+
+                <div class="accordion pb-4" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h6 class="mb-0">
+                                <a class="d-flex justify-content-between" role="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Shop
+                                    <i class="fas fa-caret-down"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <!--accordion text when expanded-->
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute.
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h6 class="mb-0">
+                                <a class="d-flex justify-content-between" role="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    Fresh Items
+                                    <i class="fas fa-caret-down"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <!--accordion text when expanded-->
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h6 class="mb-0">
+                                <a class="d-flex justify-content-between" role="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                    Ocean Foods
+                                    <i class="fas fa-caret-down"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <!--accordion text when expanded-->
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h6 class="mb-0">
+                                <a class="d-flex justify-content-between" role="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    Spicy Foods
+                                    <i class="fas fa-caret-down"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <!--accordion text when expanded-->
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h6 class="mb-0">
+                                <a class="d-flex justify-content-between" role="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                    Vegetables
+                                    <i class="fas fa-caret-down"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <!--accordion text when expanded-->
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingSix">
+                            <h6 class="mb-0">
+                                <a class="d-flex justify-content-between" role="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                    Organic Foods
+                                    <i class="fas fa-caret-down"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <!--accordion text when expanded-->
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--accordion for shop by-->
+                <h5 class="pb-3 mb-3 border-bottom text-uppercase">Shop By</h5>
+
+                <div class="accordion pb-4" id="accordionExample2">
+                    <div class="card">
+                        <div class="card-header" id="heading7">
+                            <h6 class="mb-0">
+                                <a class="d-flex justify-content-between" role="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                                    Manufacturer
+                                    <i class="fas fa-caret-down"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <!--accordion text when expanded-->
+                        <div id="collapse7" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample2">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute.
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-header" id="heading8">
+                            <h6 class="mb-0">
+                                <a class="d-flex justify-content-between" role="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="true" aria-controls="collapseTwo">
+                                    Price
+                                    <i class="fas fa-caret-down"></i>
+                                </a>
+                            </h6>
+                        </div>
+
+                        <!--accordion text when expanded-->
+                        <div id="collapse8" class="collapse show" aria-labelledby="heading8" data-parent="#accordionExample2">
+                            <div class="card-body">
+                                <ul id="price-list">
+                                    <li class="border-bottom">
+                                        <a class="d-flex justify-content-between" data-toggle="collapse" data-target="#collapse-price1" aria-expanded="true" aria-controls="collapseTwo">
+                                            $0 - $100
+                                            <i class="fas fa-caret-down"></i>
+                                        </a>
+                                        <div id="collapse-price1" class="collapse small-font">
+                                            You can find Foods of this price range here!
+                                        </div>
+                                    </li>
+
+                                    <li class="border-bottom">
+                                        <a class="d-flex justify-content-between" data-toggle="collapse" data-target="#collapse-price2" aria-expanded="true" aria-controls="collapseTwo">
+                                            $101 - $300
+                                            <i class="fas fa-caret-down"></i>
+                                        </a>
+                                        <div id="collapse-price2" class="collapse small-font">
+                                            You can find Foods of this price range here!
+                                        </div>
+                                    </li>
+
+                                    <li class="border-bottom">
+                                        <a class="d-flex justify-content-between" data-toggle="collapse" data-target="#collapse-price3" aria-expanded="true" aria-controls="collapseTwo">
+                                            $301 - $600
+                                            <i class="fas fa-caret-down"></i>
+                                        </a>
+                                        <div id="collapse-price3" class="collapse small-font">
+                                            You can find Foods of this price range here!
+                                        </div>
+                                    </li>
+
+                                    <li class="border-bottom">
+                                        <a class="d-flex justify-content-between" data-toggle="collapse" data-target="#collapse-price4" aria-expanded="true" aria-controls="collapseTwo">
+                                            $601 - Above
+                                            <i class="fas fa-caret-down"></i>
+                                        </a>
+                                        <div id="collapse-price4" class="collapse small-font">
+                                            You can find Foods of this price range here!
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--grids-->
+            <div class="col-md-9">
+                <div>
+                    <h5 class="border-bottom">
+                        <span class="mr-3">View: </span>
+                        <a role="button" class="view" onclick="listView()"><i class="fas fa-bars mr-2"></i>List</a>
+                        <a role="button" class="view" onclick="gridView()"><i class="fas fa-grip-horizontal mr-2"></i>Grid</a>
+                    </h5>
+                </div>
+
+                <!--new cards from bootsnipp-->
+                <div class="row flexDisplay">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product-grid4">
+                            <div class="product-image4">
+                                <a href="product-details.html">
+                                    <img class="pic-1" src="images/nunc-neque-eros10.jpg">
+                                    <img class="pic-2" src="images/mauris-vel-tellus.jpg">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                    <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                    <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                                <span class="product-new-label">New</span>
+                                <span class="product-discount-label">-10%</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="product-details.html">Chicken Burger</a></h3>
+                                <div class="price">
+                                    $14.40
+                                    <span>$16.00</span>
+                                </div>
+                                <a class="add-to-cart" href="">ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product-grid4">
+                            <div class="product-image4">
+                                <a href="#">
+                                    <img class="pic-1" src="images/etiam-gravida.jpg">
+                                    <img class="pic-2" src="images/lorem-ipsum-lec.jpg">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                    <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                    <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                                <span class="product-discount-label">-12%</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">Tomato Sauce</a></h3>
+                                <div class="price">
+                                    $17.60
+                                    <span>$20.00</span>
+                                </div>
+                                <a class="add-to-cart" href="">ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 d-none d-lg-block d-xl-block d-md-block">
+                        <div class="product-grid4">
+                            <div class="product-image4">
+                                <a href="#">
+                                    <img class="pic-1" src="images/proin-lectus-ipsum0.jpg">
+                                    <img class="pic-2" src="images/proin-lectus-ipsum1.jpg">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                    <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                    <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                                <span class="product-new-label">New</span>
+                                <span class="product-discount-label">-10%</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">Beef Fazita</a></h3>
+                                <div class="price">
+                                    $14.40
+                                    <span>$16.00</span>
+                                </div>
+                                <a class="add-to-cart" href="">ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--2nd row of cards-->
+                <div class="row mt-3 flexDisplay">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product-grid4">
+                            <div class="product-image4">
+                                <a href="#">
+                                    <img class="pic-1" src="images/mauris-vel-tellus.jpg">
+                                    <img class="pic-2" src="images/nunc-neque-eros10.jpg">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                    <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                    <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                                <span class="product-new-label">New</span>
+                                <span class="product-discount-label">-10%</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">Chicken Burger</a></h3>
+                                <div class="price">
+                                    $14.40
+                                    <span>$16.00</span>
+                                </div>
+                                <a class="add-to-cart" href="">ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product-grid4">
+                            <div class="product-image4">
+                                <a href="#">
+                                    <img class="pic-1" src="images/ras-neque-metus0.jpg">
+                                    <img class="pic-2" src="images/letraset-sheets.jpg">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                    <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                    <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                                <span class="product-discount-label">-12%</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">Fresh Cabbage</a></h3>
+                                <div class="price">
+                                    $17.60
+                                    <span>$20.00</span>
+                                </div>
+                                <a class="add-to-cart" href="">ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 d-none d-lg-block d-xl-block d-md-block">
+                        <div class="product-grid4">
+                            <div class="product-image4">
+                                <a href="#">
+                                    <img class="pic-1" src="images/fusce-aliquam1.jpg">
+                                    <img class="pic-2" src="images/proin-lectus-ipsum1.jpg">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                    <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                    <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                                <span class="product-new-label">New</span>
+                                <span class="product-discount-label">-10%</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">Saucy Noodles</a></h3>
+                                <div class="price">
+                                    $14.40
+                                    <span>$16.00</span>
+                                </div>
+                                <a class="add-to-cart" href="">ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--extra row when device is small-->
+
+                <div class="row mt-4 flexDisplay">
+                    <div class="col-md-4 col-sm-6 d-xl-none d-lg-none d-md-none">
+                        <div class="product-grid4">
+                            <div class="product-image4">
+                                <a href="#">
+                                    <img class="pic-1" src="images/proin-lectus-ipsum0.jpg">
+                                    <img class="pic-2" src="images/proin-lectus-ipsum1.jpg">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                    <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                    <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                                <span class="product-new-label">New</span>
+                                <span class="product-discount-label">-10%</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">Beef Fazita</a></h3>
+                                <div class="price">
+                                    $14.40
+                                    <span>$16.00</span>
+                                </div>
+                                <a class="add-to-cart" href="">ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 d-xl-none d-lg-none d-md-none">
+                        <div class="product-grid4">
+                            <div class="product-image4">
+                                <a href="#">
+                                    <img class="pic-1" src="images/fusce-aliquam1.jpg">
+                                    <img class="pic-2" src="images/proin-lectus-ipsum1.jpg">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                                    <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
+                                    <li><a href="#" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                                <span class="product-new-label">New</span>
+                                <span class="product-discount-label">-10%</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">Saucy Noodles</a></h3>
+                                <div class="price">
+                                    $14.40
+                                    <span>$16.00</span>
+                                </div>
+                                <a class="add-to-cart" href="">ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--footer-->
+<footer>
+    <div class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h5>Information:</h5>
+                    <ul class="pl-0">
+                        <li><a href="#">Specials</a></li>
+                        <li><a href="#">Our Stores</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h5>Store Information</h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <span>My Company, 42 avenue des Champs Elysées 75000 Paris France</span>
+                    </p>
+                    <p>
+                        <i class="fas fa-phone-alt mr-2"></i>
+                        <span>Call us now: 0123-456-789</span>
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mr-2"></i>
+                        <span>Email: <a href="mailto:sales@yourcompany.com">sales@yourcompany.com</a></span>
+                    </p>
+                </div>
+                <div class="col-sm-4 text-md-right">
+                    <h5>Newsletter</h5>
+                    <div class="form-group">
+                        <input type="email"
+                               placeholder="Enter Email"
+                               name="email"
+                               value=""
+                               id="email">
+                        <button type="button">OK</button>
+                    </div>
+                </div>
+            </div>
+            <p class="text-right">© Sheikh Shakil Ahmed (2019)</p>
+        </div>
+    </div>
+</footer>
+
+
+
+<!--script for grid or list view-->
+<script>
+    let elements = document.getElementsByClassName('flexDisplay');
+    let largeElements = document.getElementsByClassName('col-md-4');
+    let i;
+    function listView() {
+        /*setting row width to 50% (reducing)*/
+        for(i=0; i<elements.length; i++){
+            elements[i].style.display = 'flex';
+            elements[i].style.flexDirection = 'column';
+            elements[i].style.maxWidth = '50%';
+        }
+
+        /*setting cards width to 100% to implement list view*/
+        for(i=0; i<largeElements.length; i++){
+            largeElements[i].style.maxWidth = '100%';
+        }
+    }
+    function gridView() {
+        /*setting row width to initial for resetting row width*/
+        for(i=0; i<elements.length; i++){
+            elements[i].style.display = 'flex';
+            elements[i].style.flexDirection = 'initial';
+            elements[i].style.maxWidth = 'initial';
+        }
+
+        /*setting cards width to initial for resetting width*/
+        for(i=0; i<largeElements.length; i++){
+            largeElements[i].style.maxWidth = 'initial';
+        }
+    }
+</script>
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

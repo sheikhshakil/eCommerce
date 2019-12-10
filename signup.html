@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Accounts</title>
+</head>
+<body>
+
+<!--header-->
+<header>
+    <div class="d-none d-xl-block d-lg-block">
+        <div class="top-header">
+            <div class="container">
+                <div class="row pb-1">
+
+                    <!--usd, english-->
+                    <div class="col-6">
+                        <div class="dropdown d-inline">
+                            <button class="btn dropdown-toggle small-font" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                USD $
+                            </button>
+                            <div class="dropdown-menu small-font" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">EUR</a>
+                                <a class="dropdown-item" href="#">USD</a>
+                            </div>
+                        </div>
+                        <div class="dropdown d-inline">
+                            <button class="btn dropdown-toggle small-font" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                English
+                            </button>
+                            <div class="dropdown-menu small-font" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Spanish</a>
+                                <a class="dropdown-item" href="#">Turkey</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--nav my acc/ checkout/ sign in-->
+                    <div class="col-6">
+                        <ul class="nav justify-content-end small-font">
+                            <li class="nav-item">
+                                <a class="nav-link" href="signup.html">My Account</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Checkout</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pr-0" href="login.html">Sign in</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--nav logo, search bar etc-->
+        <div class="middle-header pt-3 pb-4">
+            <div class="container">
+                <div class="row">
+
+                    <!--logo-->
+                    <div class="col-3">
+                        <a class="navbar-brand mt-2 mb-1" href="index.html"><img src="images/logo.jpg" alt="Origine"></a>
+                    </div>
+
+                    <!--search-->
+                    <div class="col-6">
+                        <div class="mb-2">
+                            <a href="#" class="small-font">Top Tags: Car, Accessories, Tire Chains, Mirrors, Amplifiers</a>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <button class="btn dropdown-toggle small-font" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All</button>
+                                <div class="dropdown-menu small-font">
+                                    <a class="dropdown-item" href="#">Foods</a>
+                                    <a class="dropdown-item" href="#">Drinks</a>
+                                    <a class="dropdown-item" href="#">Fruits</a>
+                                    <a class="dropdown-item" href="#">Vegetables</a>
+                                </div>
+                                <input type="text" class="form-control small-font pt-4 pb-4" aria-label="Text input with dropdown button" placeholder="Enter Your Search Key...">
+                            </div>
+                            <div class="input-group-append">
+                                <button class="btn small-font" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--safe payment squares-->
+                    <div class="col-3 d-flex justify-content-end align-items-center">
+                        <div>
+                            <i class="fas fa-bell"></i>
+                            <p class="small-font">Safe Payment</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-lock"></i>
+                            <p class="small-font">24/7 Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--last-header-->
+        <div class="last-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+
+                        <!--left navbar-->
+                        <nav class="nav pt-2 pb-2">
+                            <a class="nav-link active pl-0" href="index.html">Home</a>
+                            <a class="nav-link" href="product-category.html">Products</a>
+                            <a class="nav-link" href="#">Delivery</a>
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </nav>
+                    </div>
+
+                    <!--icons at right-->
+                    <div class="col-6">
+                        <ul class="nav justify-content-end pt-2">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-heart"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pr-0" href="#"><i class="fas fa-shopping-bag"></i><span class="ml-1">$0.00</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--new navbar if less than 992px-->
+    <div class="d-xl-none d-lg-none">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light hidden pl-0 pr-0">
+
+                <!--logo-->
+                <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" class="img-fluid" alt=""></a>
+
+                <!--toggler-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--menu items-->
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Delivery</a>
+                        </li>
+
+                        <!--All category dropdown-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">All Categories</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Ocean Foods</a>
+                                <a class="dropdown-item" href="#">Vegetables</a>
+                                <a class="dropdown-item" href="#">Organic Foods</a>
+                                <a class="dropdown-item" href="#">Fresh Meat</a>
+                                <a class="dropdown-item" href="#">Sea Foods</a>
+                            </div>
+                        </li>
+
+                        <!--products dropdown-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="product-category.html">
+                                Products
+                            </a>
+                        </li>
+
+                        <!--currency dropdown-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Currency
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">USD</a>
+                                <a class="dropdown-item" href="#">EUR</a>
+                            </div>
+                        </li>
+
+
+                        <!--icon set-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-heart"></i><span class="ml-2">Wishlist</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-money-bill-alt"></i><span class="ml-2">Checkout</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signup.html"><i class="fas fa-lock"></i><span class="ml-2">Account</span></a>
+                        </li>
+
+                    </ul>
+
+                    <!--search bar for MD-->
+                    <form class="form-inline my-2 my-lg-0 small-search">
+                        <input class="form-control" type="search" placeholder="Search by keyword" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!--breadcrumb-->
+<div class="border-bottom" id="breadcrumb3">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb pl-0">
+                <li class="pr-3">Navigate:</li>
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active">Accounts</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<!--section for signup form-->
+<section id="signup">
+    <div class="container">
+        <div class="signup-form">
+            <h4 class="text-center">Welcome to Customer Panel</h4>
+            <p class="mt-2 mb-1 text-center">
+                Sign up today to get the most of Origine. Cash discounts, Special flash sales and more!
+                Just for you!
+            </p>
+            <p class="text-center">Already have an account? <a href="login.html" class="sign-in">Sign In</a></p>
+
+            <div class="form">
+                <fieldset class="mt-4 pl-3 pr-3 pb-3">
+                    <legend>Create an Account</legend>
+                    <div class="form-group mt-2">
+                        <label for="first-name">First Name</label>
+                        <input
+                                type="text"
+                                id="first-name"
+                                name="first-name"
+                                class="form-control"
+                                value=""
+                                placeholder="Enter your first name"
+                                required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input
+                                type="text"
+                                id="last-name"
+                                class="form-control"
+                                name="last-name"
+                                value=""
+                                placeholder="Enter your last name"
+                                required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email"
+                               id="email-signup"
+                               class="form-control"
+                               placeholder="Enter Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel"
+                               id="phone"
+                               class="form-control"
+                               required
+                               placeholder="Enter Phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password"
+                               id="password"
+                               class="form-control"
+                               required
+                               placeholder="Enter Password">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox"
+                               class="form-check-input"
+                               name="signup-promo"
+                               value="signed up"
+                               id="promo-msg">
+                        <label class="form-check-label" for="promo-msg"><small>Sign Up for Promotional messages</small></label>
+                    </div>
+
+                    <div class="text-center mt-5">
+                        <button type="submit" class="btn">Sign Up</button>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--footer-->
+<footer>
+    <div class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h5>Information:</h5>
+                    <ul class="pl-0">
+                        <li><a href="#">Specials</a></li>
+                        <li><a href="#">Our Stores</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h5>Store Information</h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <span>My Company, 42 avenue des Champs Elysées 75000 Paris France</span>
+                    </p>
+                    <p>
+                        <i class="fas fa-phone-alt mr-2"></i>
+                        <span>Call us now: 0123-456-789</span>
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mr-2"></i>
+                        <span>Email: <a href="mailto:sales@yourcompany.com">sales@yourcompany.com</a></span>
+                    </p>
+                </div>
+                <div class="col-sm-4 text-md-right">
+                    <h5>Newsletter</h5>
+                    <div class="form-group">
+                        <input type="email"
+                               placeholder="Enter Email"
+                               name="email"
+                               value=""
+                               id="email">
+                        <button type="button">OK</button>
+                    </div>
+                </div>
+            </div>
+            <p class="text-right">© Sheikh Shakil Ahmed (2019)</p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

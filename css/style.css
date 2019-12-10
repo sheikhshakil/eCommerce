@@ -1,5 +1,6 @@
 @import "all.min.css";
 @import "bootstrap.min.css";
+@import "products-card.css";
 @import url('https://fonts.googleapis.com/css?family=Signika&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
@@ -183,7 +184,7 @@ section, footer{
     margin-left: 0.3rem;
 }
 #left-menu ul li{
-    padding-bottom: 0.8rem;
+    padding-bottom: 0.74rem;
 }
 
 #left-menu ul li a{
@@ -273,29 +274,29 @@ section, footer{
 
 
 /*footer*/
-footer .col-md-4 h5{
+footer .col-sm-4 h5{
     margin-bottom: 0.8rem;
     color: #90BB5B;
 }
-footer .col-md-4  ul{
+footer .col-sm-4  ul{
     list-style: none;
 }
-footer .col-md-4  ul li{
+footer .col-sm-4  ul li{
     margin-bottom: 0.7rem;
 }
-footer .col-md-4  ul li a{
+footer .col-sm-4  ul li a{
     color: white;
     text-decoration: none;
 }
-footer .col-md-4  ul li a:hover{
+footer .col-sm-4  ul li a:hover{
     color: #90BB5B;
 }
 
-footer .col-md-4 p span a{
+footer .col-sm-4 p span a{
     text-decoration: none;
     color: #90BB5B;
 }
-footer .col-md-4 p span a:hover{
+footer .col-sm-4 p span a:hover{
     color: #6c944c;
 }
 
@@ -327,4 +328,270 @@ footer .container > p{
     #email{
         width: 70%;
     }
+}
+
+
+/*style for 2nd page PRODUCTS CATEGORY*/
+#product-category{
+    padding-top: 0;
+}
+
+#breadcrumb .breadcrumb{
+    margin-bottom: 0;
+    background-color: #FFF;
+}
+
+#breadcrumb nav ol li:nth-child(2) a, #breadcrumb nav ol li:nth-child(3) a{
+    color: #648d38;
+    text-decoration: none;
+}
+
+#breadcrumb nav ol li:nth-child(2) a:hover, #breadcrumb nav ol li:nth-child(3) a:hover{
+    color: #88bc43;
+}
+
+#product-category .row .col-md-3 .card-header{
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+#product-category .row .col-md-3 .dropdown-icon{
+    padding-top: .75rem;
+}
+
+
+#product-category .col-md-3 .card-header h6{
+    padding-top: .55rem;
+    padding-bottom: .55rem;
+}
+
+#price-list{
+    list-style: none;
+    padding-left: 0;
+}
+#price-list li{
+    padding-bottom: 0.2rem;
+    padding-top: .7rem;
+}
+
+.view{
+    font-size: 1rem;
+    background-color: #FFF;
+    border: 1px solid #90BB5B;
+    padding: 0.5rem 1rem;
+    margin-right: .6rem;
+    color: #90BB5B!important;
+    outline: none;
+    text-decoration: none!important;
+    cursor: pointer;
+}
+.view:hover{
+    background-color: #90BB5B;
+    color: #FFF!important;
+}
+
+#product-category h5{
+    padding-bottom: 1.1rem;
+    margin-bottom: 1.4rem;
+}
+
+
+/*style for 3rd page Product details*/
+#breadcrumb2 .breadcrumb, #breadcrumb3 .breadcrumb{
+    margin-bottom: 0;
+    background-color: #FFF;
+}
+
+#breadcrumb2 nav ol li:nth-child(2) a, #breadcrumb2 nav ol li:nth-child(3) a, #breadcrumb2 nav ol li:nth-child(4) a, #breadcrumb3 nav ol li:nth-child(2) a{
+    color: #648d38;
+    text-decoration: none;
+}
+
+#breadcrumb2 nav ol li:nth-child(2) a:hover, #breadcrumb2 nav ol li:nth-child(3) a:hover, #breadcrumb2 nav ol li:nth-child(4) a:hover, #breadcrumb3 nav ol li:nth-child(2) a:hover{
+    color: #88bc43;
+}
+
+/* Compatibility styles for frameworks like bootstrap, foundation e.t.c */
+.xzoom-source img, .xzoom-preview img, .xzoom-lens img {
+    display: block;
+    max-width: none;
+    max-height: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+/* --------------- */
+
+/* xZoom Styles below */
+.xzoom-container {
+    display: inline-block;
+}
+
+.xzoom-thumbs {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.xzoom {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+}
+.xzoom2, .xzoom3, .xzoom4, .xzoom5 {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+}
+
+/* Thumbs */
+.xzoom-gallery, .xzoom-gallery2, .xzoom-gallery3, .xzoom-gallery4, .xzoom-gallery5 {
+    border: 1px solid #cecece;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.xzoom-source, .xzoom-hidden {
+    display: block;
+    position: static;
+    float: none;
+    clear: both;
+}
+
+/* Everything out of border is hidden */
+.xzoom-hidden {
+    overflow: hidden;
+}
+
+/* Preview */
+.xzoom-preview {
+    border: 1px solid #888;
+    background: #2f4f4f;
+    box-shadow: -0px -0px 10px rgba(0,0,0,0.50);
+}
+
+/* Lens */
+.xzoom-lens {
+    border: 1px solid #555;
+    box-shadow: -0px -0px 10px rgba(0,0,0,0.50);
+    cursor: crosshair;
+}
+
+/* Loading */
+.xzoom-loading {
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    opacity: .7;
+    width: 48px;
+    height: 48px;
+}
+
+/* Additional class that applied to thumb when it is active */
+.xactive {
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(74,169,210,1);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(74,169,210,1);
+    box-shadow: 0px 0px 3px 0px rgba(74,169,210,1);
+    border: 1px solid #4aaad2;
+}
+
+/* Caption */
+.xzoom-caption {
+    position: absolute;
+    bottom: -43px;
+    left: 0;
+    background: #000;
+    width: 100%;
+    text-align: left;
+}
+
+.xzoom-caption span {
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: block;
+    font-size: 0.75em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#product-details p{
+    margin: 0;
+    padding: 0;
+}
+#product-details .price-large{
+    font-size: 1.3rem;
+    color: #749d4f;
+}
+#product-details .col-md-7 p a{
+    color: #80aa5b;
+    text-decoration: none;
+}
+#product-details .col-md-7 p a:hover{
+    color: #6b924c;
+}
+
+#product-details .col-md-7 > div select{
+    border: 1px solid #80aa5b;
+}
+
+#product-details .col-md-7 > div a{
+    background-color: #80aa5b;
+    text-decoration: none;
+    color: #FFF;
+    padding: .5rem .8rem;
+}
+
+#product-details .col-md-7 > div a:hover{
+    background-color: #719a4e;
+}
+
+@media (max-width: 768px) {
+    #breadcrumb2 ol li, #product-details .col-md-7 > div select, body, .accordion .card-header h6 {
+        font-size: 0.9rem!important;
+    }
+    .card-deck .card h5, h5{
+        font-size: 1.2rem!important;
+    }
+    h3{
+        font-size: 1.4rem!important;
+    }
+}
+
+#product-category .product-grid4{
+    margin-bottom: 0.5rem;
+}
+
+/*style for fourth page signup*/
+#signup .signup-form{
+    width: 75%;
+    margin: auto;
+    border: 1px solid #80aa5b;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
+#signup .signup-form h4{
+    color: #80aa5b;
+}
+#signup .signup-form legend{
+    font-size: 1.3rem;
+}
+
+#signup .form-control{
+    width: 100%;
+    font-size: 0.9rem;
+    border: 1px  solid #80aa5b;
+}
+#signup .form .btn{
+    border: 1px solid #80aa5b;
+    color: #80aa5b;
+}
+#signup .form .btn:hover{
+    background-color: #80aa5b;
+    color: #FFF;
+}
+.sign-in{
+    text-decoration: none;
+    color: #80aa5b;
+}
+.sign-in:hover{
+    color: #638543;
 }
