@@ -1,6 +1,6 @@
-@import "all.min.css";
-@import "bootstrap.min.css";
-@import "products-card.css";
+@import url('all.min.css');
+@import url('bootstrap.min.css');
+@import url('grid.css');
 @import url('https://fonts.googleapis.com/css?family=Signika&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
@@ -373,27 +373,14 @@ footer .container > p{
     padding-top: .7rem;
 }
 
-.view{
-    font-size: 1rem;
-    background-color: #FFF;
-    border: 1px solid #90BB5B;
-    padding: 0.5rem 1rem;
-    margin-right: .6rem;
-    color: #90BB5B!important;
-    outline: none;
-    text-decoration: none!important;
-    cursor: pointer;
-}
-.view:hover{
-    background-color: #90BB5B;
-    color: #FFF!important;
-}
-
 #product-category h5{
     padding-bottom: 1.1rem;
     margin-bottom: 1.4rem;
 }
-
+.simple-list-grid ul li a{
+    text-decoration: none;
+    color: #000000;
+}
 
 /*style for 3rd page Product details*/
 #breadcrumb2 .breadcrumb, #breadcrumb3 .breadcrumb{
