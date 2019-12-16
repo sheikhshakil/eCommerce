@@ -33,12 +33,16 @@
 .simple-list-grid ul li .thumb {
   float: left;
   margin-right: 1.5rem;
-  width: 180px;
+  width: 11.25rem;
   overflow: hidden;
 }
 
 .simple-list-grid ul li .thumb img {
   width: 100%;
-  height: auto;
-  margin:10px auto;
+  height: 11.25rem;
+  margin: .625rem auto;
+}
+
+.simple-list-grid ul li .data{
+  margin-top: 1.3rem;
 }
